@@ -5,10 +5,10 @@ import { MapPin, Calendar } from "lucide-react";
 const ExperienceSection = () => {
   const experiences = [
     {
-      title: "Desenvolvedor Fullstack Senior",
-      company: "Tech Company",
-      location: "São Paulo, SP",
-      period: "Jan 2023 - Atual",
+      title: "Desenvolvedor Fullstack Pleno",
+      company: "RobDev",
+      location: "Fortaleza, CE",
+      period: "Jan 2025 - Atual",
       type: "Híbrido",
       description: [
         "Desenvolvimento de aplicações web modernas usando React, TypeScript e Node.js",
@@ -19,11 +19,11 @@ const ExperienceSection = () => {
       technologies: ["React", "TypeScript", "Node.js", "PostgreSQL", "AWS", "Docker"]
     },
     {
-      title: "Desenvolvedor Frontend",
-      company: "Startup Inovadora",
-      location: "Rio de Janeiro, RJ",
-      period: "Jun 2021 - Dez 2022",
-      type: "Remoto",
+      title: "Engenheiro de Software",
+      company: "Startup Driblus",
+      location: "Fortaleza, CE",
+      period: "Jun 2024 - Abril 2025",
+      type: "Híbrido",
       description: [
         "Criação de interfaces responsivas e acessíveis",
         "Integração com APIs RESTful e GraphQL",
@@ -35,7 +35,7 @@ const ExperienceSection = () => {
     {
       title: "Desenvolvedor Junior",
       company: "Software House",
-      location: "Brasília, DF",
+      location: "Fortaleza, CE",
       period: "Jan 2021 - Maio 2021",
       type: "Presencial",
       description: [
@@ -50,15 +50,15 @@ const ExperienceSection = () => {
 
   const education = [
     {
-      title: "Tecnólogo em Sistemas para Internet",
-      institution: "Instituto Federal de Brasília (IFB)",
-      period: "2019 - 2022",
+      title: "Análise e Desenvolvimento de Sistemas",
+      institution: "Centro Universitário Unifametro",
+      period: "2024 - Cursando",
       description: "Formação focada em desenvolvimento web, banco de dados e arquitetura de software"
     },
     {
       title: "Certificação AWS Solutions Architect",
       institution: "Amazon Web Services",
-      period: "2023",
+      period: "2025",
       description: "Certificação em arquitetura de soluções na nuvem AWS"
     }
   ];

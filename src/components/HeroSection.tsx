@@ -20,10 +20,10 @@ const HeroSection = () => {
               Olá, eu sou
             </p>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 fade-in-up glow-text">
-              Seu Nome Aqui
+              Lázaro Vasconcelos
             </h1>
             <h2 className="text-xl md:text-2xl lg:text-3xl text-secondary mb-8 fade-in-up">
-              Desenvolvedor(a) Fullstack & Tech Enthusiast
+              Desenvolvedor Fullstack
             </h2>
             <p className="text-white/80 text-lg md:text-xl mb-8 max-w-2xl fade-in-up">
               Transformando ideias em soluções digitais inovadoras. 

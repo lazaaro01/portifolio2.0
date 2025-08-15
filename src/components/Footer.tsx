@@ -1,12 +1,12 @@
-import { Github, Linkedin, Mail, Heart } from "lucide-react";
+import { Github, Linkedin, Mail, Heart, Coffee } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: Github, href: "#", label: "GitHub" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Mail, href: "mailto:seu.email@exemplo.com", label: "Email" }
+    { icon: Github, href: "https://github.com/lazaaro01", label: "GitHub" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/l%C3%A1zaro-vasconcelos-87a968287/", label: "LinkedIn" },
+    { icon: Mail, href: "lazaro13.vascon@gmail.com", label: "Email" }
   ];
 
   return (
@@ -16,7 +16,7 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <h3 className="text-xl font-bold bg-gradient-accent bg-clip-text text-transparent mb-2">
-              Seu Portfolio
+            
             </h3>
             <p className="text-white/70">
               Desenvolvedor Fullstack apaixonado por criar soluções digitais inovadoras.
@@ -67,9 +67,10 @@ const Footer = () => {
         {/* Copyright */}
         <div className="text-center">
           <p className="text-white/70 flex items-center justify-center gap-2">
-            © {currentYear} Seu Nome. Feito com 
+            © {currentYear} Lázaro Vasconcelos. Feito com 
             <Heart className="h-4 w-4 text-red-500 fill-current" />
-            usando React & TypeScript
+            E muito café!
+            <Coffee className="h-4 w-4 text-brown-500 fill-current" />
           </p>
         </div>
       </div>

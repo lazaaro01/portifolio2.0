@@ -3,26 +3,21 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Mail, MapPin, Phone, Linkedin, Github, Twitter } from "lucide-react";
+import { Mail, MapPin, Phone, Linkedin, Github, Instagram } from "lucide-react";
 
 const ContactSection = () => {
   const contactInfo = [
     {
       icon: Mail,
       label: "Email",
-      value: "seu.email@exemplo.com",
-      href: "mailto:seu.email@exemplo.com"
+      value: "lazaro13.vascon@gmail.com",
+      href: "lazaro13.vascon@gmail.com"
     },
-    {
-      icon: Phone,
-      label: "Telefone",
-      value: "+55 (11) 99999-9999",
-      href: "tel:+5511999999999"
-    },
+  
     {
       icon: MapPin,
       label: "Localização",
-      value: "São Paulo, SP - Brasil",
+      value: "Fortaleza, CE - Brasil",
       href: "#"
     }
   ];
@@ -31,20 +26,19 @@ const ContactSection = () => {
     {
       icon: Linkedin,
       name: "LinkedIn",
-      href: "#",
+      href: "https://www.linkedin.com/in/l%C3%A1zaro-vasconcelos-87a968287/",
       color: "hover:text-blue-600"
     },
     {
       icon: Github,
       name: "GitHub",
-      href: "#",
+      href: "https://github.com/lazaaro01",
       color: "hover:text-gray-600"
     },
     {
-      icon: Twitter,
-      name: "Twitter",
-      href: "#",
-      color: "hover:text-blue-400"
+      icon: Instagram,
+      name: "Instagram",
+      href: "https://www.instagram.com/lazaaro___/"
     }
   ];
 

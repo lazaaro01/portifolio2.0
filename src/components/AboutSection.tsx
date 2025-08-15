@@ -7,12 +7,12 @@ const AboutSection = () => {
     {
       icon: GraduationCap,
       title: "Formação",
-      description: "Graduação em Tecnologia de Sistemas para Internet"
+      description: "Graduando em Análise e Desenvolvimento de Sistemas"
     },
     {
       icon: Briefcase,
       title: "Experiência",
-      description: "2+ anos como Desenvolvedor(a) Fullstack"
+      description: "2+ anos como Desenvolvedor Fullstack"
     },
     {
       icon: Users,
@@ -27,9 +27,9 @@ const AboutSection = () => {
   ];
 
   const skills = [
-    "React", "TypeScript", "Node.js", "Python", 
+    "React", "TypeScript", "Node.js", "Java","Spring boot", 
     "Next.js", "PostgreSQL", "AWS", "Docker",
-    "GraphQL", "MongoDB", "Tailwind CSS", "Git"
+    "MongoDB", "Tailwind CSS", "Git", "CI/CD"
   ];
 
   return (

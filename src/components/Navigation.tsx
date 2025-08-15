@@ -21,7 +21,7 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <a href="#home" className="text-xl font-bold bg-gradient-accent bg-clip-text text-transparent">
-              Portfolio
+              Lázaro dev
             </a>
           </div>
 
