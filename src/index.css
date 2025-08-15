@@ -17,17 +17,17 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 15%;
 
-    /* Rich crimson red theme */
-    --primary: 0 75% 40%;
+    /* Rich blue theme - Modern and professional */
+    --primary: 220 90% 45%;
     --primary-foreground: 0 0% 100%;
-    --primary-dark: 0 85% 25%;
-    --primary-light: 0 65% 50%;
+    --primary-dark: 220 95% 25%;
+    --primary-light: 220 85% 60%;
 
-    /* Golden accent colors */
-    --secondary: 45 95% 60%;
+    /* Cyan/Teal accent colors */
+    --secondary: 190 95% 60%;
     --secondary-foreground: 0 0% 15%;
-    --secondary-dark: 38 85% 45%;
-    --secondary-light: 48 100% 70%;
+    --secondary-dark: 185 85% 45%;
+    --secondary-light: 195 100% 70%;
 
     /* Neutral grays */
     --muted: 0 0% 96%;
@@ -89,15 +89,15 @@ All colors MUST be HSL.
     --popover: 0 0% 8%;
     --popover-foreground: 0 0% 95%;
 
-    --primary: 0 75% 50%;
+    --primary: 220 90% 55%;
     --primary-foreground: 0 0% 100%;
-    --primary-dark: 0 85% 35%;
-    --primary-light: 0 65% 60%;
+    --primary-dark: 220 95% 35%;
+    --primary-light: 220 85% 70%;
 
-    --secondary: 45 95% 65%;
+    --secondary: 190 95% 65%;
     --secondary-foreground: 0 0% 15%;
-    --secondary-dark: 38 85% 50%;
-    --secondary-light: 48 100% 75%;
+    --secondary-dark: 185 85% 50%;
+    --secondary-light: 195 100% 75%;
 
     --muted: 0 0% 15%;
     --muted-foreground: 0 0% 65%;

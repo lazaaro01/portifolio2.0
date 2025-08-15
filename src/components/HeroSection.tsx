@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Code, Mail } from "lucide-react";
-import logo3d from "@/assets/logo-3d.png";
+import Scene3D from "@/components/Scene3D";
 
 const HeroSection = () => {
   return (
@@ -43,19 +43,15 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* 3D Logo/Visual Element */}
+          {/* Elemento 3D Interativo */}
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
-              <img 
-                src={logo3d} 
-                alt="3D Logo" 
-                className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 object-contain animate-pulse"
-                style={{
-                  filter: 'drop-shadow(0 0 30px hsl(var(--secondary) / 0.5))'
-                }}
-              />
+              <Scene3D />
               
-              {/* Decorative elements around the logo */}
+              {/* Efeito de brilho ao redor */}
+              <div className="absolute inset-0 bg-gradient-radial from-secondary/20 to-transparent rounded-full blur-3xl"></div>
+              
+              {/* Elementos decorativos animados */}
               <div className="absolute -top-4 -right-4 w-8 h-8 bg-secondary rounded-full opacity-60 animate-bounce"></div>
               <div className="absolute -bottom-6 -left-6 w-6 h-6 bg-secondary-light rounded-full opacity-40 animate-bounce" style={{ animationDelay: '0.5s' }}></div>
               <div className="absolute top-1/2 -right-8 w-4 h-4 bg-secondary-dark rounded-full opacity-50 animate-bounce" style={{ animationDelay: '1s' }}></div>
