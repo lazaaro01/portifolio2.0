@@ -29,7 +29,7 @@ const AboutSection = () => {
   const skills = [
     "React", "TypeScript", "Node.js", "Java","Spring boot", 
     "Next.js", "PostgreSQL", "AWS", "Docker",
-    "MongoDB", "Tailwind CSS", "Git", "CI/CD"
+    "MongoDB", "Tailwind CSS", "Git", "CI/CD", "PWA"
   ];
 
   return (
@@ -54,7 +54,7 @@ const AboutSection = () => {
             </p>
             <p className="text-muted-foreground text-lg mb-6">
               Tenho experiência sólida em desenvolvimento frontend com React, TypeScript 
-              e frameworks modernos, bem como backend com Node.js, Python e bancos de dados. 
+              e frameworks modernos, bem como backend com Node.js, Java e bancos de dados. 
               Sempre busco as melhores práticas de desenvolvimento e arquitetura de software.
             </p>
             <p className="text-muted-foreground text-lg">
