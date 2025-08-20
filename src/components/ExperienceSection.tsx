@@ -16,7 +16,7 @@ const ExperienceSection = () => {
         "Liderança de equipe e mentoria de desenvolvedores juniores",
         "Otimização de performance e experiência do usuário"
       ],
-      technologies: ["React", "TypeScript", "Node.js", "PostgreSQL", "AWS", "Docker"]
+      technologies: ["React", "Tailwind CSS","TypeScript", "Node.js", "PostgreSQL", "PWA", "ElectronJs"]
     },
     {
       title: "Engenheiro de Software",
@@ -30,7 +30,7 @@ const ExperienceSection = () => {
         "Implementação de testes automatizados",
         "Colaboração em metodologias ágeis (Scrum/Kanban)"
       ],
-      technologies: ["React", "Next.js", "Tailwind CSS", "GraphQL", "Jest"]
+      technologies: ["React", "Tailwind.js", "Java Spring Boot", "AWS", "WordPress"]
     },
     {
       title: "Desenvolvedor Junior",

@@ -57,10 +57,15 @@ const AboutSection = () => {
               e frameworks modernos, bem como backend com Node.js, Java e bancos de dados. 
               Sempre busco as melhores práticas de desenvolvimento e arquitetura de software.
             </p>
-            <p className="text-muted-foreground text-lg">
+            <p className="text-muted-foreground text-lg mb-6">
               Além do desenvolvimento, gosto de compartilhar conhecimento através de 
               mentoria e contribuições para a comunidade tech.
             </p>
+             <p className= "text-muted-foreground text-lg">
+             Também já fui professor de informática, com foco na formação acadêmica e preparação para o mercado de trabalho, 
+              trabalhando com a Solar Coca-Cola. Durante essa experiência, pude ensinar e orientar diversos alunos 
+              a utilizarem a tecnologia de maneira eficaz para suas carreiras profissionais.
+          </p>
           </div>
 
           <div className="space-y-6">

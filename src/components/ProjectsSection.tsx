@@ -6,37 +6,37 @@ import { ExternalLink, Github, Eye } from "lucide-react";
 const ProjectsSection = () => {
   const projects = [
     {
-      title: "E-commerce Platform",
-      description: "Plataforma completa de e-commerce com painel administrativo, sistema de pagamentos e gestão de estoque. Interface moderna e responsiva com excelente UX.",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop",
-      technologies: ["React", "Node.js", "PostgreSQL", "Stripe", "AWS"],
+      title: "Driblus - Agendamento Esportivo",
+      description: "Plataforma completa de e-commerce com painel administrativo, sistema de pagamentos e gestão de estoque. Interface moderna e 'responsiva' com excelente UX.",
+      image: "/driblus.png",
+      technologies: ["React", "Node.js", "PostgreSQL", "PWA", "AWS"],
       github: "#",
       live: "#",
       featured: true
     },
     {
-      title: "Task Management App",
+      title: "Sistema Reação F1",
       description: "Aplicativo de gerenciamento de tarefas com recursos de colaboração em tempo real, notificações e relatórios de produtividade.",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop",
-      technologies: ["Next.js", "TypeScript", "Prisma", "Socket.io"],
+      image: "/claro.png",
+      technologies: ["React", "Tailwind CSS", "TypeScript", "Node.js", "C++"],
       github: "#",
       live: "#",
       featured: true
     },
     {
-      title: "Weather Dashboard",
+      title: "MovieExplorer",
       description: "Dashboard interativo de clima com mapas, previsões detalhadas e alertas personalizados. Integração com múltiplas APIs meteorológicas.",
-      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=500&h=300&fit=crop",
-      technologies: ["Vue.js", "Chart.js", "OpenWeather API", "Mapbox"],
+      image: "/desktop-layout.png",
+      technologies: ["React", "Tailwind CSS", "OMDB API", "Axios"],
       github: "#",
       live: "#",
       featured: false
     },
     {
-      title: "Blog CMS",
+      title: "Sistema de Gerenciamento de OS",
       description: "Sistema de gerenciamento de conteúdo para blogs com editor rico, otimização SEO e analytics integrados.",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=500&h=300&fit=crop",
-      technologies: ["React", "Headless CMS", "GraphQL", "Vercel"],
+      image: "/os.png",
+      technologies: ["React", "TypeScript", "Tailwind CSS", "Node.js", "MongoDB", "Docker Compose"],
       github: "#",
       live: "#",
       featured: false
@@ -115,7 +115,7 @@ const ProjectsSection = () => {
                       <ExternalLink className="mr-2 h-4 w-4" />
                       Ver Projeto
                     </Button>
-                    <Button variant="outline" size="sm">
+                    <Button variant="outline" size="sm" >
                       <Github className="h-4 w-4" />
                     </Button>
                   </div>
