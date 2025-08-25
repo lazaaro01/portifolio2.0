@@ -7,16 +7,16 @@ const ProjectsSection = () => {
   const projects = [
     {
       title: "Driblus - Agendamento Esportivo",
-      description: "Plataforma completa de e-commerce com painel administrativo, sistema de pagamentos e gestão de estoque. Interface moderna e 'responsiva' com excelente UX.",
+      description: "Desevolvimento de aplicação web ultilizando Java, Spring Boot e React. Integração de APIs e banco de dados para criação de soluções completas e escalabilidade em nuvem com AWS.",
       image: "/driblus.png",
       technologies: ["React", "Node.js", "PostgreSQL", "PWA", "AWS"],
       github: "#",
-      live: "#",
+      live: "https://driblus.com.br/",
       featured: true
     },
     {
       title: "Sistema Reação F1",
-      description: "Aplicativo de gerenciamento de tarefas com recursos de colaboração em tempo real, notificações e relatórios de produtividade.",
+      description: "Um jogo de reação inspirado na Fórmula 1, desenvolvido para a Claro. O projeto integra frontend React, backend Node.js e hardware Arduino para criar uma experiência de jogo imersiva.",
       image: "/claro.png",
       technologies: ["React", "Tailwind CSS", "TypeScript", "Node.js", "C++"],
       github: "#",
@@ -25,11 +25,11 @@ const ProjectsSection = () => {
     },
     {
       title: "MovieExplorer",
-      description: "Dashboard interativo de clima com mapas, previsões detalhadas e alertas personalizados. Integração com múltiplas APIs meteorológicas.",
+      description: "Este é um projeto simples de busca de filmes e séries usando a API OMDb. A aplicação permite que o usuário digite o nome de um filme ou série e visualize os resultados com o título, ano de lançamento, cartaz e uma breve sinopse. O projeto foi desenvolvido utilizando React e Tailwind CSS para a estilização.",
       image: "/desktop-layout.png",
       technologies: ["React", "Tailwind CSS", "OMDB API", "Axios"],
-      github: "#",
-      live: "#",
+      github: "https://github.com/lazaaro01/MovieExplorer",
+      live: "https://movie-explorer-coral.vercel.app/",
       featured: false
     },
     {
@@ -111,12 +111,24 @@ const ProjectsSection = () => {
                     ))}
                   </div>
                   <div className="flex gap-3">
-                    <Button variant="outline" size="sm" className="flex-1">
-                      <ExternalLink className="mr-2 h-4 w-4" />
-                      Ver Projeto
+                    <Button variant="outline" size="sm" className="flex-1" asChild>
+                      <a
+                        href={project.live}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <ExternalLink className="mr-2 h-4 w-4" />
+                        Ver Projeto
+                      </a>
                     </Button>
-                    <Button variant="outline" size="sm" >
-                      <Github className="h-4 w-4" />
+                    <Button variant="outline" size="sm" asChild>
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Github className="h-4 w-4" />
+                      </a>
                     </Button>
                   </div>
                 </CardContent>
@@ -154,12 +166,24 @@ const ProjectsSection = () => {
                     )}
                   </div>
                   <div className="flex gap-2">
-                    <Button variant="outline" size="sm" className="flex-1 text-xs">
-                      <ExternalLink className="mr-1 h-3 w-3" />
-                      Demo
+                    <Button variant="outline" size="sm" className="flex-1 text-xs" asChild>
+                      <a
+                        href={project.live}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <ExternalLink className="mr-1 h-3 w-3" />
+                        Demo
+                      </a>
                     </Button>
-                    <Button variant="outline" size="sm" className="text-xs">
-                      <Github className="h-3 w-3" />
+                    <Button variant="outline" size="sm" className="text-xs" asChild>
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Github className="h-3 w-3" />
+                      </a>
                     </Button>
                   </div>
                 </CardContent>
@@ -171,9 +195,15 @@ const ProjectsSection = () => {
         {/* Call to Action */}
         <div className="text-center mt-12">
           <p className="text-muted-foreground mb-4">Interessado em ver mais do meu trabalho?</p>
-          <Button size="lg" className="btn-hero">
-            <Github className="mr-2 h-5 w-5" />
-            Ver todos no GitHub
+          <Button size="lg" className="btn-hero" asChild>
+            <a
+              href="https://github.com/lazaaro01"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Github className="mr-2 h-5 w-5" />
+              Ver todos no GitHub
+            </a>
           </Button>
         </div>
       </div>
