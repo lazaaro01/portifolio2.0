@@ -13,22 +13,22 @@ const ExperienceSection = () => {
       description: [
         "Desenvolvimento de aplicações web modernas usando React, TypeScript e Node.js",
         "Implementação de arquiteturas escaláveis e microsserviços",
-        "Liderança de equipe e mentoria de desenvolvedores juniores",
+        "Desenvolvimento de jogos para eventos corporativos",
         "Otimização de performance e experiência do usuário"
       ],
-      technologies: ["React", "Tailwind CSS","TypeScript", "Node.js", "PostgreSQL", "PWA", "ElectronJs"]
+      technologies: ["React", "Tailwind CSS","TypeScript", "Node.js", "PostgreSQL", "PWA", "ElectronJs",]
     },
     {
       title: "Engenheiro de Software",
       company: "Startup Driblus",
       location: "Fortaleza, CE",
-      period: "Jun 2024 - Abril 2025",
+      period: "Jun 2024 - Abril 2025",  
       type: "Híbrido",
       description: [
         "Criação de interfaces responsivas e acessíveis",
-        "Integração com APIs RESTful e GraphQL",
+        "Implementação de arquiteturas escaláveis e microsserviços",
         "Implementação de testes automatizados",
-        "Colaboração em metodologias ágeis (Scrum/Kanban)"
+        "Colaboração em metodologias ágeis (Scrum)"
       ],
       technologies: ["React", "Tailwind.js", "Java Spring Boot", "AWS", "WordPress"]
     },
