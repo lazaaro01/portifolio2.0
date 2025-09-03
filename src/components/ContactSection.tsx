@@ -166,8 +166,18 @@ const ContactSection = () => {
             <Button size="lg" className="btn-hero">
               Contratar Agora
             </Button>
-            <Button size="lg" variant="outline" className="btn-outline-hero">
-              Download CV
+            <Button
+              size="lg"
+              variant="outline"
+              className="btn-outline-hero"
+              asChild
+            >
+              <a
+                href="/Currículo - Lázaro Vasconcelos Costa.pdf"
+                download
+              >
+                Download CV
+              </a>
             </Button>
           </div>
         </div>
