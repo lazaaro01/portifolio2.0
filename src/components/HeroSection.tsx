@@ -30,17 +30,7 @@ const HeroSection = () => {
               Criando experiências web modernas com tecnologias de ponta.
             </p>
             
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start fade-in-up">
-              <Button size="lg" className="btn-hero text-foreground font-semibold">
-                <Code className="mr-2 h-5 w-5" />
-                Ver Projetos
-              </Button>
-              <Button size="lg" variant="outline" className="btn-outline-hero">
-                <Mail className="mr-2 h-5 w-5" />
-                Contato
-              </Button>
-            </div>
+          
           </div>
 
           {/* Elemento 3D Interativo */}
