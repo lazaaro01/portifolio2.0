@@ -13,6 +13,7 @@ Bem-vindo ao meu repositório! Aqui você pode conferir meu portfólio de desenv
 ### ⚙️ **Desenvolvimento Back-End**
 - **Node.js**: Criação de APIs com Express, integração com bancos de dados e implementação de autenticação.
 - **Java**: Utilização do Spring Boot para a construção de soluções robustas e escaláveis.
+- **TypeScript**: Superset do JavaScript que adiciona tipagem estática, tornando o código mais seguro e fácil de manter.
 
 ### 🗄️ **Banco de Dados**
 - **SQL (MySQL, PostgreSQL)**: Modelagem de dados e otimização de consultas.
