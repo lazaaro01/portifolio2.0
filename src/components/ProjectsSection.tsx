@@ -42,12 +42,12 @@ const ProjectsSection = () => {
       featured: false
     },
     {
-      title: "Finance Tracker",
-      description: "Aplicativo de controle financeiro pessoal com categorização automática, gráficos interativos e projeções.",
-      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=500&h=300&fit=crop",
-      technologies: ["React Native", "Firebase", "Charts", "ML Kit"],
-      github: "#",
-      live: "#",
+      title: "Notion Pessoal",
+      description: "Aplicativo pessoal construído para ser o seu Notion pessoal. Nele, você pode registrar seu humor diário, fazer anotações, armazenar links importantes, adicionar músicas que te fazem bem, registrar livros que leu e escrever uma avaliação sobre cada um deles.",
+      image: "/layout.png",
+      technologies: ["React", "TypeScript", "Three.js", "PWA"],
+      github: "https://github.com/lazaaro01/App-Pessoal",
+      live: "https://app-pessoal.vercel.app/",
       featured: false
     },
     {
