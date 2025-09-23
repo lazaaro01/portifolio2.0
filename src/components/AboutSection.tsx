@@ -1,7 +1,8 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { GraduationCap, Briefcase, Users, Lightbulb } from "lucide-react";
-
+import  LogoLoop from './LogoLoop';
+import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiSpring, SiNodedotjs, SiPostgresql, SiDocker, SiAmazons3, SiPrisma, SiPwa, SiGithubactions, SiMongodb, SiFirebase, SiAmazonrds, SiSwagger, SiJest, SiGit, SiPostman, SiGithub, SiJavascript, SiElectron, SiExpress, SiFastify } from "react-icons/si";
 const AboutSection = () => {
   const highlights = [
     {
@@ -26,10 +27,31 @@ const AboutSection = () => {
     }
   ];
 
-  const skills = [
-    "React", "TypeScript", "Node.js", "Java","Spring boot", 
-    "Next.js", "PostgreSQL", "AWS", "Docker",
-    "MongoDB", "Tailwind CSS", "Git", "CI/CD", "PWA"
+  const teachLogos = [
+  { node: <SiReact />, title: "React", href: "https://react.dev" },
+  { node: <SiNextdotjs />, title: "Next.js", href: "https://nextjs.org" },
+  { node: <SiJavascript />, title: "JavaScript", href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
+  { node: <SiTypescript />, title: "TypeScript", href: "https://www.typescriptlang.org" },
+  { node: <SiElectron />, title: "Electron", href: "https://www.electronjs.org" },
+  { node: <SiTailwindcss />, title: "Tailwind CSS", href: "https://tailwindcss.com" },
+  { node: <SiNodedotjs />, title: "Node.js", href: "https://www.nodejs.com"},
+  { node: <SiExpress />, title: "Express.js", href: "https://expressjs.com" },
+  { node: <SiFastify />, title: "Fastify", href: "https://www.fastify.io" },
+  { node: <SiSpring />, title: "Spring Boot", href: "https://spring.io/projects/spring-boot" },
+  { node: <SiPostgresql />, title: "PostgreSQL", href: "https://www.postgresql.org" },
+  { node: <SiPrisma />, title: "Prisma", href: "https://www.prisma.io" },
+  { node: <SiMongodb />, title: "MongoDB", href: "https://www.mongodb.com"},
+  { node: <SiFirebase />, title: "Firebase", href: "https://firebase.google.com"},
+  { node: <SiDocker />, title: "Docker", href: "https://www.docker.com" },
+  { node: <SiAmazons3 />, title: "AWS S3", href: "https://aws.amazon.com/s3/" },
+  { node: <SiAmazonrds />, title: "AWS RDS", href: "https://aws.amazon.com/rds/" },
+  { node: <SiPwa />, title: "PWA", href: "https://web.dev/progressive-web-apps/" },
+  { node: <SiGithub />, title: "GitHub", href: "https://github.com" },
+  { node: <SiGit />, title: "Git", href: "https://git-scm.com" },
+  { node: <SiGithubactions />, title: "CI/CD", href: "https://en.wikipedia.org/wiki/CI/CD" },
+  { node: <SiJest />, title: "Jest", href: "https://jestjs.io" },
+  { node: <SiSwagger />, title: "Swagger", href: "https://swagger.io" },
+  { node: <SiPostman />, title: "Postman", href: "https://www.postman.com" },
   ];
 
   return (
@@ -91,13 +113,13 @@ const AboutSection = () => {
         <div className="text-center">
           <h3 className="text-2xl font-semibold mb-8">Tecnologias & Ferramentas</h3>
           <div className="flex flex-wrap justify-center gap-3">
-            {skills.map((skill, index) => (
+            {teachLogos.map((skill, index) => (
               <Badge 
                 key={index} 
                 variant="secondary" 
                 className="px-4 py-2 text-sm bg-gradient-card hover:shadow-glow transition-all duration-300"
               >
-                {skill}
+                {teachLogos[index].node} <span className="ml-2">{skill.title}</span>
               </Badge>
             ))}
           </div>
