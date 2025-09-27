@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Heart, Coffee } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -67,10 +67,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="text-center">
           <p className="text-white/70 flex items-center justify-center gap-2">
-            © {currentYear} Lázaro Vasconcelos. Feito com 
-            <Heart className="h-4 w-4 text-red-500 fill-current" />
-            E muito café!
-            <Coffee className="h-4 w-4 text-brown-500 fill-current" />
+            © {currentYear} Lázaro Vasconcelos
           </p>
         </div>
       </div>

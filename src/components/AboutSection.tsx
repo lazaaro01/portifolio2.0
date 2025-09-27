@@ -2,7 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { GraduationCap, Briefcase, Users, Lightbulb } from "lucide-react";
 import  LogoLoop from './LogoLoop';
-import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiSpring, SiNodedotjs, SiPostgresql, SiDocker, SiAmazons3, SiPrisma, SiPwa, SiGithubactions, SiMongodb, SiFirebase, SiAmazonrds, SiSwagger, SiJest, SiGit, SiPostman, SiGithub, SiJavascript, SiElectron, SiExpress, SiFastify } from "react-icons/si";
+import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiSpring, SiNodedotjs, SiPostgresql, SiDocker, SiAmazons3, SiPrisma, SiPwa, SiGithubactions, SiMongodb, SiFirebase, SiAmazonrds, SiSwagger, SiJest, SiGit, SiPostman, SiGithub, SiJavascript, SiElectron, SiExpress, SiFastify, SiGraphql } from "react-icons/si";
 const AboutSection = () => {
   const highlights = [
     {
@@ -52,6 +52,7 @@ const AboutSection = () => {
   { node: <SiJest />, title: "Jest", href: "https://jestjs.io" },
   { node: <SiSwagger />, title: "Swagger", href: "https://swagger.io" },
   { node: <SiPostman />, title: "Postman", href: "https://www.postman.com" },
+  { node: <SiGraphql />, title: "GraphQL", href: "https://graphql.org" },
   ];
 
   return (
