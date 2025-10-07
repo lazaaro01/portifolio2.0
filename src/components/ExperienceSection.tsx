@@ -8,7 +8,7 @@ const ExperienceSection = () => {
       title: "Desenvolvedor Fullstack Pleno",
       company: "RobDev",
       location: "Fortaleza, CE",
-      period: "Jan 2025 - Atual",
+      period: "Jan 2025 - Out 2025",
       type: "Híbrido",
       description: [
         "Desenvolvimento de aplicações web modernas usando React, TypeScript e Node.js",

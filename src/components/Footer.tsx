@@ -66,7 +66,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="text-center">
-          <p className="text-white/70 flex items-center justify-center gap-2">
+          <p className="text-white flex items-center justify-center gap-2">
             © {currentYear} Lázaro Vasconcelos
           </p>
         </div>
