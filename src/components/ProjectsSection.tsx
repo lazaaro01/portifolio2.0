@@ -6,12 +6,12 @@ import { ExternalLink, Github, Eye } from "lucide-react";
 const ProjectsSection = () => {
   const projects = [
     {
-      title: "Driblus - Agendamento Esportivo",
-      description: "Desevolvimento de aplicação web ultilizando Java, Spring Boot e React. Integração de APIs e banco de dados para criação de soluções completas e escalabilidade em nuvem com AWS.",
-      image: "/driblus.png",
-      technologies: ["React", "Node.js", "PostgreSQL", "PWA", "AWS"],
+      title: "Capigames — Jogo Interativo para o Parque Temático CapiValley",
+      description: "Desevolvimento de jogo interativo e 100% offline para o parque temático CapiValley, com personagens e identidade visual totalmente personalizados. A aplicação foi feita com Electron e otimizada para rodar em monitores touch screen, garantindo uma experiência divertida e acessível para todas as idades — sem depender de conexão com a internet.",
+      image: "/capivalley.jpg",
+      technologies: ["Electron", "JavaScript", "HTML", "Bootstrap", "PWA"],
       github: "#",
-      live: "https://driblus.com.br/",
+      live: "#",
       featured: true
     },
     {
@@ -51,12 +51,12 @@ const ProjectsSection = () => {
       featured: false
     },
     {
-      title: "Real Estate Platform",
-      description: "Plataforma imobiliária com busca avançada, tours virtuais e sistema de agendamento de visitas.",
-      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=500&h=300&fit=crop",
-      technologies: ["Next.js", "Prisma", "MapGL", "Three.js"],
+      title: "Driblus - Agendamento Esportivo",
+      description: "Desevolvimento de aplicação web ultilizando Java, Spring Boot e React. Integração de APIs e banco de dados para criação de soluções completas e escalabilidade em nuvem com AWS.",
+      image: "/driblus.png",
+      technologies: ["React", "Node.js", "PostgreSQL", "PWA", "AWS"],
       github: "#",
-      live: "#",
+      live: "https://driblus.com.br/",
       featured: false
     }
   ];
