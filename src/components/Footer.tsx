@@ -16,11 +16,7 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <h3 className="text-xl font-bold bg-gradient-accent bg-clip-text text-transparent mb-2">
-            
             </h3>
-            <p className="text-white/70">
-              Desenvolvedor Fullstack apaixonado por criar soluções digitais inovadoras.
-            </p>
           </div>
 
           {/* Navigation Links */}

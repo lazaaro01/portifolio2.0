@@ -5,7 +5,20 @@ import { MapPin, Calendar } from "lucide-react";
 const ExperienceSection = () => {
   const experiences = [
     {
-      title: "Desenvolvedor Fullstack Pleno",
+      title: "Fullstack Developer Pleno",
+      location: "Remoto",
+      company: "Sollydus Tecnologia",
+      period: "Out 2025 - Atual",
+      type: "Remoto",
+      description: [
+        "Desenvolvimento de um SaaS para automatizar processos de negócios para empresas",
+        "Implementação de funcionalidades front-end e back-end",
+        "Serviços cloud utilizando AWS S3, Lambda, ELB, RDS, Cluster, Redis",
+      ],
+      technologies: ["React", "Tailwind CSS","TypeScript", "Node.js", "AWS","S3", "ELB", "RDS","Lambda", "Docker", "PostgreSQL", "Redis"]
+    },
+    {
+      title: "Desenvolvedor Fullstack",
       company: "RobDev",
       location: "Fortaleza, CE",
       period: "Jan 2025 - Out 2025",

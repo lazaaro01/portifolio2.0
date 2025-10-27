@@ -26,8 +26,7 @@ const HeroSection = () => {
               Desenvolvedor Fullstack
             </h2>
             <p className="text-white/80 text-lg md:text-xl mb-8 max-w-2xl fade-in-up">
-              Transformando ideias em soluções digitais inovadoras. 
-              Criando experiências web modernas com tecnologias de ponta.
+              Focado em construir soluções completas, desde o back-end até a interface do usuário, criando sistemas funcionais e de alto desempenho.
             </p>
             
           
@@ -46,13 +45,6 @@ const HeroSection = () => {
               <div className="absolute -bottom-6 -left-6 w-6 h-6 bg-secondary-light rounded-full opacity-40 animate-bounce" style={{ animationDelay: '0.5s' }}></div>
               <div className="absolute top-1/2 -right-8 w-4 h-4 bg-secondary-dark rounded-full opacity-50 animate-bounce" style={{ animationDelay: '1s' }}></div>
             </div>
-          </div>
-        </div>
-
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-secondary rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-secondary rounded-full mt-2 animate-pulse"></div>
           </div>
         </div>
       </div>
