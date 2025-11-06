@@ -61,21 +61,6 @@ const ExperienceSection = () => {
     }
   ];
 
-  const education = [
-    {
-      title: "Análise e Desenvolvimento de Sistemas",
-      institution: "Centro Universitário Unifametro",
-      period: "2024 - Cursando",
-      description: "Formação focada em desenvolvimento web, banco de dados e arquitetura de software"
-    },
-    {
-      title: "Certificação AWS Solutions Architect",
-      institution: "Amazon Web Services",
-      period: "2025",
-      description: "Certificação em arquitetura de soluções na nuvem AWS"
-    }
-  ];
-
   return (
     <section id="experience" className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -136,22 +121,7 @@ const ExperienceSection = () => {
             ))}
           </div>
         </div>
-
-        {/* Education */}
         <div>
-          <h3 className="text-2xl font-semibold mb-8 text-center">Formação & Certificações</h3>
-          <div className="grid md:grid-cols-2 gap-6">
-            {education.map((edu, index) => (
-              <Card key={index} className="border-none shadow-soft hover:shadow-glow transition-all duration-300">
-                <CardContent className="p-6">
-                  <h4 className="text-lg font-semibold mb-2">{edu.title}</h4>
-                  <p className="text-primary font-medium mb-2">{edu.institution}</p>
-                  <p className="text-muted-foreground text-sm mb-3">{edu.period}</p>
-                  <p className="text-muted-foreground">{edu.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
         </div>
       </div>
     </section>

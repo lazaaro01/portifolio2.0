@@ -2,7 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { GraduationCap, Briefcase, Users, Lightbulb } from "lucide-react";
 import  LogoLoop from './LogoLoop';
-import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiSpring, SiNodedotjs, SiPostgresql, SiDocker, SiAmazons3, SiPrisma, SiPwa, SiGithubactions, SiMongodb, SiFirebase, SiAmazonrds, SiSwagger, SiJest, SiGit, SiPostman, SiGithub, SiJavascript, SiElectron, SiExpress, SiFastify, SiGraphql } from "react-icons/si";
+import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiSpring, SiNodedotjs, SiPostgresql, SiDocker, SiAmazons3, SiPrisma, SiPwa, SiGithubactions, SiMongodb, SiFirebase, SiAmazonrds, SiSwagger, SiJest, SiGit, SiPostman, SiGithub, SiJavascript, SiElectron, SiExpress, SiFastify, SiGraphql, SiSupabase } from "react-icons/si";
 const AboutSection = () => {
   const highlights = [
     {
@@ -42,6 +42,7 @@ const AboutSection = () => {
   { node: <SiPrisma />, title: "Prisma", href: "https://www.prisma.io" },
   { node: <SiMongodb />, title: "MongoDB", href: "https://www.mongodb.com"},
   { node: <SiFirebase />, title: "Firebase", href: "https://firebase.google.com"},
+  {node: <SiSupabase />, title: "Supabase", href: "https://supabase.com"},
   { node: <SiDocker />, title: "Docker", href: "https://www.docker.com" },
   { node: <SiAmazons3 />, title: "AWS S3", href: "https://aws.amazon.com/s3/" },
   { node: <SiAmazonrds />, title: "AWS RDS", href: "https://aws.amazon.com/rds/" },
