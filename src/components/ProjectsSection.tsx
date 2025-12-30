@@ -33,12 +33,12 @@ const ProjectsSection = () => {
       featured: false
     },
     {
-      title: "Sistema de Gerenciamento de OS",
-      description: "Sistema de gerenciamento de conteúdo para blogs com editor rico, otimização SEO e analytics integrados.",
-      image: "/os.png",
-      technologies: ["React", "TypeScript", "Tailwind CSS", "Node.js", "MongoDB", "Docker Compose"],
-      github: "#",
-      live: "#",
+      title: "Tech Tools Hub",
+      description: "Um catálogo prático de comandos e atalhos para desenvolvedores.",
+      image: "/tech.png",
+      technologies: ["Next.js 15+", "React", "Tailwind CSS v4", "GroqIA",],
+      github: "https://github.com/lazaaro01/Tech-Tools-Hub",
+      live: "https://tech-tools-hub.vercel.app/",
       featured: false
     },
     {
