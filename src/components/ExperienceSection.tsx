@@ -12,10 +12,10 @@ const ExperienceSection = () => {
       type: "Remoto",
       description: [
         "Liderança técnica do time e definição de padrões de código e arquitetura",
-  "Desenvolvimento de um SaaS para automatizar processos de negócios para empresas",
-  "Implementação de funcionalidades front-end e back-end",
-  "Mentoria técnica, code reviews e apoio no crescimento do time",
-  "Serviços cloud utilizando AWS S3, Lambda, ELB, RDS, Cluster, Redis",
+        "Desenvolvimento de um SaaS para automatizar processos de negócios para empresas",
+        "Implementação de funcionalidades front-end e back-end",
+        "Mentoria técnica, code reviews e apoio no crescimento do time",
+        "Serviços cloud utilizando AWS S3, Lambda, ELB, RDS, Cluster, Redis",
       ],
       technologies: ["React", "Tailwind CSS","TypeScript", "Node.js", "AWS","S3", "ELB", "RDS","Lambda", "Docker", "PostgreSQL", "Redis"]
     },
