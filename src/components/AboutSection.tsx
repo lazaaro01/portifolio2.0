@@ -12,7 +12,7 @@ const AboutSection = () => {
     {
       icon: Briefcase,
       title: "Experiência",
-      description: "2+ anos como Desenvolvedor Fullstack"
+      description: "3+ anos como Desenvolvedor Fullstack"
     },
     {
       icon: Users,
@@ -74,23 +74,18 @@ const AboutSection = () => {
           <div>
             <h3 className="text-2xl font-semibold mb-6">Minha Jornada</h3>
             <p className="text-muted-foreground text-lg mb-6">
-              Sou um desenvolvedor fullstack apaixonado por tecnologia e inovação. 
-              Com mais de 2 anos de experiência, especializo-me em criar aplicações 
-              web modernas e eficientes que oferecem excelente experiência do usuário.
+              Sou desenvolvedor fullstack apaixonado por tecnologia e inovação, com mais de 3 anos 
+              de experiência na criação de aplicações web modernas, eficientes e focadas na experiência do usuário.
             </p>
             <p className="text-muted-foreground text-lg mb-6">
-              Tenho experiência sólida em desenvolvimento frontend com React, TypeScript 
-              e frameworks modernos, bem como backend com Node.js, Java e bancos de dados. 
-              Sempre busco as melhores práticas de desenvolvimento e arquitetura de software.
-            </p>
-            <p className="text-muted-foreground text-lg mb-6">
-              Além do desenvolvimento, gosto de compartilhar conhecimento através de 
-              mentoria e contribuições para a comunidade tech.
+              Atualmente atuo com React, TypeScript e Node.js, 
+              aplicando boas práticas de desenvolvimento, código limpo e arquiteturas bem estruturadas.
             </p>
              <p className= "text-muted-foreground text-lg">
-             Também já fui professor de informática, com foco na formação acadêmica e preparação para o mercado de trabalho, 
-              trabalhando com a Solar Coca-Cola. Durante essa experiência, pude ensinar e orientar diversos alunos 
-              a utilizarem a tecnologia de maneira eficaz para suas carreiras profissionais.
+             Além do desenvolvimento, gosto de compartilhar conhecimento através de mentoria e contribuições 
+            para a comunidade tech. Também já atuei como professor de informática na Solar Coca-Cola, 
+            onde pude contribuir para a formação acadêmica e preparação profissional de alunos, 
+            utilizando a tecnologia como ferramenta para impulsionar carreiras.
           </p>
           </div>
 
