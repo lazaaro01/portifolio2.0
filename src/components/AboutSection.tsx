@@ -74,8 +74,9 @@ const AboutSection = () => {
           <div>
             <h3 className="text-2xl font-semibold mb-6">Minha Jornada</h3>
             <p className="text-muted-foreground text-lg mb-6">
-              Sou desenvolvedor fullstack apaixonado por tecnologia e inovação, com mais de 3 anos 
-              de experiência na criação de aplicações web modernas, eficientes e focadas na experiência do usuário.
+              Desenvolvedor fullstack, 
+              com experiência na construção e manutenção de aplicações web modernas
+              , atuando desde a concepção até a entrega de soluções eficientes e escaláveis.
             </p>
             <p className="text-muted-foreground text-lg mb-6">
               Atualmente atuo com React, TypeScript e Node.js, 
@@ -83,9 +84,9 @@ const AboutSection = () => {
             </p>
              <p className= "text-muted-foreground text-lg">
              Além do desenvolvimento, gosto de compartilhar conhecimento através de mentoria e contribuições 
-            para a comunidade tech. Também já atuei como professor de informática na Solar Coca-Cola, 
-            onde pude contribuir para a formação acadêmica e preparação profissional de alunos, 
-            utilizando a tecnologia como ferramenta para impulsionar carreiras.
+             para a comunidade tech. Também já atuei como professor de informática na Solar Coca-Cola, 
+             onde pude contribuir para a formação acadêmica e preparação profissional de alunos, 
+             utilizando a tecnologia como ferramenta para impulsionar carreiras.
           </p>
           </div>
 

@@ -11,7 +11,6 @@ const ExperienceSection = () => {
       period: "Out 2025 - Atual",
       type: "Remoto",
       description: [
-        "Liderança técnica do time e definição de padrões de código e arquitetura",
         "Desenvolvimento de um SaaS para automatizar processos de negócios para empresas",
         "Implementação de funcionalidades front-end e back-end",
         "Mentoria técnica, code reviews e apoio no crescimento do time",
