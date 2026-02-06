@@ -25,10 +25,6 @@ const HeroSection = () => {
             <h2 className="text-xl md:text-2xl lg:text-3xl text-secondary mb-8 fade-in-up">
               Desenvolvedor Fullstack
             </h2>
-            <p className="text-white/80 text-lg md:text-xl mb-8 max-w-2xl fade-in-up">
-              Focado em construir soluções completas, desde o back-end até a interface do usuário, criando sistemas funcionais e de alto desempenho.
-            </p>
-            
           
           </div>
 

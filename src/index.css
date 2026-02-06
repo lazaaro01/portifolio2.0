@@ -231,6 +231,26 @@ All colors MUST be HSL.
   }
 }
 
+@keyframes float-slow {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes gradient-x {
+  0%, 100% {
+    background-size: 200% 200%;
+    background-position: left center;
+  }
+  50% {
+    background-size: 200% 200%;
+    background-position: right center;
+  }
+}
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -240,6 +260,14 @@ All colors MUST be HSL.
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.animate-float-slow {
+  animation: float-slow 3s ease-in-out infinite;
+}
+
+.animate-gradient-x {
+  animation: gradient-x 5s ease infinite;
 }
 
 .fade-in-up {

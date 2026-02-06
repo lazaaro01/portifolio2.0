@@ -1,7 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { GraduationCap, Briefcase, Users, Lightbulb } from "lucide-react";
-import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiSpring, SiNodedotjs, SiPostgresql, SiDocker, SiAmazons3, SiPrisma, SiPwa, SiGithubactions, SiMongodb, SiFirebase, SiAmazonrds, SiSwagger, SiJest, SiGit, SiPostman, SiGithub, SiJavascript, SiElectron, SiExpress, SiFastify, SiGraphql, SiSupabase, SiTerraform, SiBun, SiGo, SiGin } from "react-icons/si";
+
 const AboutSection = () => {
   const highlights = [
     {
@@ -26,38 +25,6 @@ const AboutSection = () => {
     }
   ];
 
-  const teachLogos = [
-  { node: <SiReact />, title: "React", href: "https://react.dev" },
-  { node: <SiNextdotjs />, title: "Next.js", href: "https://nextjs.org" },
-  { node: <SiJavascript />, title: "JavaScript", href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
-  { node: <SiTypescript />, title: "TypeScript", href: "https://www.typescriptlang.org" },
-  { node: <SiElectron />, title: "Electron", href: "https://www.electronjs.org" },
-  { node: <SiTailwindcss />, title: "Tailwind CSS", href: "https://tailwindcss.com" },
-  { node: <SiNodedotjs />, title: "Node.js", href: "https://www.nodejs.com"},
-  { node: <SiExpress />, title: "Express.js", href: "https://expressjs.com" },
-  { node: <SiFastify />, title: "Fastify", href: "https://www.fastify.io" },
-  { node: <SiSpring />, title: "Spring Boot", href: "https://spring.io/projects/spring-boot" },
-  { node: <SiPostgresql />, title: "PostgreSQL", href: "https://www.postgresql.org" },
-  { node: <SiPrisma />, title: "Prisma", href: "https://www.prisma.io" },
-  { node: <SiMongodb />, title: "MongoDB", href: "https://www.mongodb.com"},
-  { node: <SiFirebase />, title: "Firebase", href: "https://firebase.google.com"},
-  { node: <SiSupabase />, title: "Supabase", href: "https://supabase.com"},
-  { node: <SiDocker />, title: "Docker", href: "https://www.docker.com" },
-  { node: <SiAmazons3 />, title: "AWS S3", href: "https://aws.amazon.com/s3/" },
-  { node: <SiAmazonrds />, title: "AWS RDS", href: "https://aws.amazon.com/rds/" },
-  { node: <SiPwa />, title: "PWA", href: "https://web.dev/progressive-web-apps/" },
-  { node: <SiGithub />, title: "GitHub", href: "https://github.com" },
-  { node: <SiGit />, title: "Git", href: "https://git-scm.com" },
-  { node: <SiGithubactions />, title: "CI/CD", href: "https://en.wikipedia.org/wiki/CI/CD" },
-  { node: <SiJest />, title: "Jest", href: "https://jestjs.io" },
-  { node: <SiSwagger />, title: "Swagger", href: "https://swagger.io" },
-  { node: <SiPostman />, title: "Postman", href: "https://www.postman.com" },
-  { node: <SiGraphql />, title: "GraphQL", href: "https://graphql.org" },
-  { node: <SiTerraform />, title: "Terraform", href: "https://www.terraform.io"},
-  { node: <SiGo />, title: "Golang", href: "https://golang.org"},
-  { node: <SiGin />, title: "Gin", href: "https://gin/gonic.com"}
-  ];
-
   return (
     <section id="about" className="py-20 bg-muted/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -65,67 +32,73 @@ const AboutSection = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Sobre <span className="bg-gradient-accent bg-clip-text text-transparent">Mim</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Desenvolvedor apaixonado por criar soluções digitais inovadoras e eficientes
-          </p>
         </div>
 
+        {/* Photo + Text Section */}
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+          {/* Profile Photo */}
+          <div className="flex justify-center lg:justify-start order-1 lg:order-none">
+            <div className="relative group">
+              {/* Animated gradient border */}
+              <div className="absolute -inset-1 bg-gradient-to-r from-secondary via-primary to-secondary rounded-full blur-sm opacity-75 group-hover:opacity-100 transition-opacity duration-500 animate-gradient-x"></div>
+
+              {/* Photo container */}
+              <div className="relative">
+                <img
+                  src="/eu.jpeg"
+                  alt="Lázaro Vasconcelos - Desenvolvedor Fullstack"
+                  className="w-72 h-72 md:w-80 md:h-80 object-cover rounded-full shadow-hero relative z-10 transition-transform duration-500 group-hover:scale-[1.02]"
+                />
+
+                {/* Decorative elements */}
+                <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-gradient-accent rounded-xl opacity-50 blur-lg"></div>
+                <div className="absolute -top-4 -left-4 w-16 h-16 bg-secondary/30 rounded-full blur-md"></div>
+              </div>
+
+            </div>
+          </div>
+
+          {/* Journey Text */}
           <div>
             <h3 className="text-2xl font-semibold mb-6">Minha Jornada</h3>
             <p className="text-muted-foreground text-lg mb-6">
-              Desenvolvedor fullstack, 
-              com experiência na construção e manutenção de aplicações web modernas
-              , atuando desde a concepção até a entrega de soluções eficientes e escaláveis.
+              Desenvolvedor fullstack,
+              com experiência na construção e manutenção de aplicações web modernas,
+              atuando desde a concepção até a entrega de soluções eficientes e escaláveis.
             </p>
             <p className="text-muted-foreground text-lg mb-6">
-              Atualmente atuo com React, TypeScript e Node.js, 
+              Atualmente atuo com React, TypeScript e Node.js,
               aplicando boas práticas de desenvolvimento, código limpo e arquiteturas bem estruturadas.
             </p>
-             <p className= "text-muted-foreground text-lg">
-             Além do desenvolvimento, gosto de compartilhar conhecimento através de mentoria e contribuições 
-             para a comunidade tech. Também já atuei como professor de informática na Solar Coca-Cola, 
-             onde pude contribuir para a formação acadêmica e preparação profissional de alunos, 
-             utilizando a tecnologia como ferramenta para impulsionar carreiras.
-          </p>
-          </div>
-
-          <div className="space-y-6">
-            {highlights.map((item, index) => (
-              <Card key={index} className="border-none shadow-soft hover:shadow-glow transition-all duration-300">
-                <CardContent className="p-6">
-                  <div className="flex items-start space-x-4">
-                    <div className="bg-gradient-accent p-3 rounded-lg">
-                      <item.icon className="h-6 w-6 text-foreground" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-lg mb-2">{item.title}</h4>
-                      <p className="text-muted-foreground">{item.description}</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+            <p className="text-muted-foreground text-lg">
+              Além do desenvolvimento, gosto de compartilhar conhecimento através de mentoria e contribuições
+              para a comunidade tech. Também já atuei como professor de informática na Solar Coca-Cola,
+              onde pude contribuir para a formação acadêmica e preparação profissional de alunos,
+              utilizando a tecnologia como ferramenta para impulsionar carreiras.
+            </p>
           </div>
         </div>
 
-        {/* Skills Section */}
-        <div className="text-center">
-          <h3 className="text-2xl font-semibold mb-8">Tecnologias & Ferramentas</h3>
-          <div className="flex flex-wrap justify-center gap-3">
-            {teachLogos.map((skill, index) => (
-              <Badge 
-                key={index} 
-                variant="secondary" 
-                className="px-4 py-2 text-sm bg-gradient-card hover:shadow-glow transition-all duration-300"
-              >
-                {teachLogos[index].node} <span className="ml-2">{skill.title}</span>
-              </Badge>
-            ))}
-          </div>
+        {/* Highlights Cards */}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {highlights.map((item, index) => (
+            <Card key={index} className="border-none shadow-soft hover:shadow-glow transition-all duration-300 hover:-translate-y-1">
+              <CardContent className="p-6">
+                <div className="flex flex-col items-center text-center space-y-4">
+                  <div className="bg-gradient-accent p-4 rounded-xl">
+                    <item.icon className="h-8 w-8 text-foreground" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-lg mb-2">{item.title}</h4>
+                    <p className="text-muted-foreground text-sm">{item.description}</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
         </div>
       </div>
-    </section>
+    </section >
   );
 };
 
