@@ -15,7 +15,7 @@ const ProjectsSection = () => {
       featured: true
     },
     {
-      title: "Sistema Reação F1",
+      title: "Sistema Reação Fórmula 1",
       description: "Um jogo de reação inspirado na Fórmula 1, desenvolvido para a Claro. O projeto integra frontend React, backend Node.js e hardware Arduino para criar uma experiência de jogo imersiva.",
       image: "/claro.png",
       technologies: ["React", "Tailwind CSS", "TypeScript", "Node.js", "C++"],
@@ -24,12 +24,12 @@ const ProjectsSection = () => {
       featured: true
     },
     {
-      title: "MovieExplorer",
-      description: "Este é um projeto simples de busca de filmes e séries usando a API OMDb. A aplicação permite que o usuário digite o nome de um filme ou série e visualize os resultados com o título, ano de lançamento, cartaz e uma breve sinopse. O projeto foi desenvolvido utilizando React e Tailwind CSS para a estilização.",
-      image: "/desktop-layout.png",
-      technologies: ["React", "Tailwind CSS", "OMDB API", "Axios"],
-      github: "https://github.com/lazaaro01/MovieExplorer",
-      live: "https://movie-explorer-coral.vercel.app/",
+      title: "Controle Perto",
+      description: "Sistema de controle de gastos pessoais onde o usuário pode registrar seus gastos e receitas, visualizar gráficos e estatísticas, e acompanhar seu orçamento.",
+      image: "/controle.png",
+      technologies: ["React", "TypeScript", "Node.js", "Supabase", "Chart.js"],
+      github: "https://github.com/lazaaro01/Spending-Systems",
+      live: "https://spending-systems.vercel.app/",
       featured: false
     },
     {

@@ -13,7 +13,7 @@ const ContactSection = () => {
       value: "lazaro13.vascon@gmail.com",
       href: "lazaro13.vascon@gmail.com"
     },
-  
+
     {
       icon: MapPin,
       label: "Localização",
@@ -50,14 +50,52 @@ const ContactSection = () => {
             Vamos <span className="bg-gradient-accent bg-clip-text text-transparent">Conversar</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Estou sempre aberto a novas oportunidades e projetos interessantes. 
+            Estou sempre aberto a novas oportunidades e projetos interessantes.
             Entre em contato comigo!
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+          {/* Contact Form */}
+          <Card className="border-none shadow-soft order-1 lg:order-none">
+            <CardContent className="p-8">
+              <h3 className="text-2xl font-semibold mb-6">Envie uma Mensagem</h3>
+              <form className="space-y-6">
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div className="space-y-2">
+                    <Label htmlFor="name">Nome</Label>
+                    <Input id="name" placeholder="Seu nome completo" />
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="email">Email</Label>
+                    <Input id="email" type="email" placeholder="seu@email.com" />
+                  </div>
+                </div>
+
+                <div className="space-y-2">
+                  <Label htmlFor="subject">Assunto</Label>
+                  <Input id="subject" placeholder="Sobre o que você gostaria de conversar?" />
+                </div>
+
+                <div className="space-y-2">
+                  <Label htmlFor="message">Mensagem</Label>
+                  <Textarea
+                    id="message"
+                    placeholder="Conte-me mais sobre seu projeto ou ideia..."
+                    className="min-h-[120px]"
+                  />
+                </div>
+
+                <Button type="submit" size="lg" className="btn-hero w-full">
+                  <Mail className="mr-2 h-5 w-5" />
+                  Enviar Mensagem
+                </Button>
+              </form>
+            </CardContent>
+          </Card>
+
           {/* Contact Information */}
-          <div className="space-y-8">
+          <div className="space-y-8 flex flex-col justify-center">
             <div>
               <h3 className="text-2xl font-semibold mb-6">Informações de Contato</h3>
               <div className="space-y-6">
@@ -68,7 +106,7 @@ const ContactSection = () => {
                     </div>
                     <div>
                       <p className="font-medium">{info.label}</p>
-                      <a 
+                      <a
                         href={info.href}
                         className="text-muted-foreground hover:text-secondary transition-colors"
                       >
@@ -81,7 +119,7 @@ const ContactSection = () => {
             </div>
 
             {/* Social Links */}
-            <div>
+            <div className="pt-8 lg:pt-12">
               <h4 className="text-lg font-semibold mb-4">Redes Sociais</h4>
               <div className="flex space-x-4">
                 {socialLinks.map((social, index) => (
@@ -98,59 +136,7 @@ const ContactSection = () => {
                 ))}
               </div>
             </div>
-
-            {/* Call to Action */}
-            <Card className="border-none shadow-soft bg-gradient-card">
-              <CardContent className="p-6">
-                <h4 className="text-lg font-semibold mb-3">Vamos construir algo incrível juntos!</h4>
-                <p className="text-muted-foreground mb-4">
-                  Seja para um projeto freelance, oportunidade de emprego ou apenas para trocar ideias sobre tecnologia.
-                </p>
-                <Button className="btn-hero w-full">
-                  <Mail className="mr-2 h-4 w-4" />
-                  Enviar Email Direto
-                </Button>
-              </CardContent>
-            </Card>
           </div>
-
-          {/* Contact Form */}
-          <Card className="border-none shadow-soft">
-            <CardContent className="p-8">
-              <h3 className="text-2xl font-semibold mb-6">Envie uma Mensagem</h3>
-              <form className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div className="space-y-2">
-                    <Label htmlFor="name">Nome</Label>
-                    <Input id="name" placeholder="Seu nome completo" />
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="email">Email</Label>
-                    <Input id="email" type="email" placeholder="seu@email.com" />
-                  </div>
-                </div>
-                
-                <div className="space-y-2">
-                  <Label htmlFor="subject">Assunto</Label>
-                  <Input id="subject" placeholder="Sobre o que você gostaria de conversar?" />
-                </div>
-                
-                <div className="space-y-2">
-                  <Label htmlFor="message">Mensagem</Label>
-                  <Textarea 
-                    id="message" 
-                    placeholder="Conte-me mais sobre seu projeto ou ideia..."
-                    className="min-h-[120px]"
-                  />
-                </div>
-                
-                <Button type="submit" size="lg" className="btn-hero w-full">
-                  <Mail className="mr-2 h-5 w-5" />
-                  Enviar Mensagem
-                </Button>
-              </form>
-            </CardContent>
-          </Card>
         </div>
 
         {/* Additional CTA */}
@@ -159,7 +145,7 @@ const ContactSection = () => {
             Pronto para começar seu próximo projeto?
           </h3>
           <p className="text-white/80 mb-6 max-w-2xl mx-auto">
-            Estou disponível para projetos freelance e oportunidades de trabalho em tempo integral. 
+            Estou disponível para projetos freelance e oportunidades de trabalho em tempo integral.
             Vamos criar algo extraordinário juntos!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

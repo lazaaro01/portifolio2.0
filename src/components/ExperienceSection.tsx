@@ -5,7 +5,7 @@ import { MapPin, Calendar } from "lucide-react";
 const ExperienceSection = () => {
   const experiences = [
     {
-      title: "Fullstack Developer Pleno",
+      title: "Desenvolvedor Fullstack Pleno",
       location: "Remoto",
       company: "Sollydus Tecnologia",
       period: "Out 2025 - Atual",
@@ -19,7 +19,7 @@ const ExperienceSection = () => {
       technologies: ["React", "Tailwind CSS","TypeScript", "Node.js", "AWS","S3", "ELB", "RDS","Lambda", "Docker", "PostgreSQL", "Redis"]
     },
     {
-      title: "Fullstack Developer",
+      title: "Desenvolvedor Fullstack",
       company: "RobDev",
       location: "Fortaleza, CE",
       period: "Jan 2025 - Out 2025",
@@ -50,7 +50,7 @@ const ExperienceSection = () => {
       title: "Desenvolvedor Junior",
       company: "Software House",
       location: "Fortaleza, CE",
-      period: "Jan 2021 - Maio 2021",
+      period: "Jan 2021 - Maio 2022",
       type: "Presencial",
       description: [
         "Desenvolvimento de funcionalidades em projetos web",
@@ -58,7 +58,7 @@ const ExperienceSection = () => {
         "Participação em code reviews e pair programming",
         "Aprendizado contínuo de tecnologias modernas"
       ],
-      technologies: ["JavaScript", "PHP", "MySQL", "WordPress", "Bootstrap"]
+      technologies: ["NextJs", "React", "MySQL", "Vite", "Tailwind CSS"]
     }
   ];
 
@@ -67,10 +67,10 @@ const ExperienceSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Experiência & <span className="bg-gradient-accent bg-clip-text text-transparent">Formação</span>
+            Experiências <span className="bg-gradient-accent bg-clip-text text-transparent">Profissionais</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Minha jornada profissional e acadêmica no mundo da tecnologia
+            Minha jornada profissional no mundo da tecnologia
           </p>
         </div>
 

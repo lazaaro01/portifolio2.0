@@ -35,9 +35,9 @@ const AboutSection = () => {
         </div>
 
         {/* Photo + Text Section */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center mb-16 max-w-5xl mx-auto">
           {/* Profile Photo */}
-          <div className="flex justify-center lg:justify-start order-1 lg:order-none">
+          <div className="flex justify-center lg:justify-center order-1 lg:order-none">
             <div className="relative group">
               {/* Animated gradient border */}
               <div className="absolute -inset-1 bg-gradient-to-r from-secondary via-primary to-secondary rounded-full blur-sm opacity-75 group-hover:opacity-100 transition-opacity duration-500 animate-gradient-x"></div>
