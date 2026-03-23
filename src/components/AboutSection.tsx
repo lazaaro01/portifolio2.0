@@ -50,7 +50,7 @@ const AboutSection = () => {
               <div className="absolute -bottom-6 -right-6 p-4 bg-white/5 border border-white/10 backdrop-blur-xl rounded-2xl shadow-2xl z-20">
                 <div className="flex gap-2">
                   <div className="w-3 h-3 rounded-full bg-emerald-500 animate-pulse"></div>
-                  <span className="text-xs font-bold uppercase tracking-widest text-white/80">Senior Mindset</span>
+                  <span className="text-xs font-bold uppercase tracking-widest text-white/80">Fullstack Developer</span>
                 </div>
               </div>
             </div>
