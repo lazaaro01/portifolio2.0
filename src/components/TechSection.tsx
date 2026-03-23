@@ -88,36 +88,84 @@ function IconCloud({ radius }: { radius: number }) {
     );
 }
 
+const categories = [
+    {
+        title: "Frontend",
+        techs: [
+            "React", "Next.js", "TypeScript", "Tailwind CSS", 
+            "Redux", "Zustand", "Context API", "React Router", 
+            "Auth (JWT/OAuth)", "Axios/Fetch", "Hooks", "Vite"
+        ]
+    },
+    {
+        title: "Backend",
+        techs: [
+            "Node.js", "Express", "Fastify", "Spring Boot", 
+            "Go", "GraphQL", "REST APIs", "Microsserviços", 
+            "JWT/Sessions", "TypeORM/Prisma", "Testes (Jest/Vitest)", "WebSockets"
+        ]
+    },
+    {
+        title: "Database, Cloud & DevOps",
+        techs: [
+            "PostgreSQL", "MongoDB", "Redis", "AWS (S3, EC2, Lambda, RDS)", 
+            "Docker", "CI/CD (GitHub Actions)", "Terraform", "Linux", "Git"
+        ]
+    }
+];
+
 const TechSection = () => {
     return (
-        <section id="tech" className="py-20 bg-background relative overflow-hidden h-[700px] flex flex-col items-center">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-4 relative z-10 pointer-events-none">
-                <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                    Tecnologias & <span className="bg-gradient-accent bg-clip-text text-transparent">Ferramentas</span>
-                </h2>
-                <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-                    Arraste para girar e interaja com os ícones.
-                </p>
-            </div>
+        <section id="tech" className="py-24 bg-background relative overflow-hidden">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div className="text-center mb-16">
+                    <h2 className="text-sm font-bold uppercase tracking-[0.2em] text-primary mb-4">Stack Tecnológica</h2>
+                    <h3 className="text-4xl md:text-5xl font-bold text-white mb-6">Expertise que gera <span className="text-transparent bg-clip-text bg-gradient-accent">Valor</span></h3>
+                </div>
 
-            <div className="w-full h-full relative cursor-grab active:cursor-grabbing">
-                <Canvas camera={{ position: [0, 0, 15], fov: 45 }} dpr={[1, 2]}>
-                    <ambientLight intensity={1} />
-                    <pointLight position={[10, 10, 10]} intensity={1} />
+                <div className="grid lg:grid-cols-[1fr_1.2fr] gap-16 items-center">
+                    {/* 3D Visual Side */}
+                    <div className="h-[400px] md:h-[500px] relative cursor-grab active:cursor-grabbing bg-white/[0.07] backdrop-blur-sm rounded-[3rem] border border-white/10 group">
+                        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                        <Canvas camera={{ position: [0, 0, 10], fov: 45 }} dpr={[1, 2]}>
+                            <ambientLight intensity={1} />
+                            <pointLight position={[10, 10, 10]} intensity={1} />
+                            <IconCloud radius={3.2} />
+                            <OrbitControls
+                                enableZoom={false}
+                                autoRotate
+                                autoRotateSpeed={2.0}
+                                enablePan={false}
+                            />
+                        </Canvas>
+                        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-[10px] font-bold uppercase tracking-widest text-white/40 pointer-events-none">
+                            Interaja com a nuvem 3D
+                        </div>
+                    </div>
 
-                    <IconCloud radius={3.5} />
-
-                    <OrbitControls
-                        enableZoom={false}
-                        autoRotate
-                        autoRotateSpeed={3.0}
-                        enablePan={false}
-                    />
-                </Canvas>
+                    {/* Categorized Content Side */}
+                    <div className="space-y-8">
+                        {categories.map((cat, idx) => (
+                            <div key={idx} className="p-8 rounded-[2rem] bg-white/[0.07] backdrop-blur-sm border border-white/10 hover:border-primary/30 transition-all duration-500 group">
+                                <h4 className="text-xl font-bold text-white mb-6 flex items-center gap-3">
+                                    <span className="w-8 h-px bg-primary/50"></span>
+                                    {cat.title}
+                                </h4>
+                                <div className="flex flex-wrap gap-3">
+                                    {cat.techs.map((tech, tIdx) => (
+                                        <span key={tIdx} className="px-4 py-2 rounded-xl bg-white/[0.07] border border-white/10 text-slate-300 text-sm font-medium hover:bg-primary/10 hover:border-primary/50 transition-all duration-300 cursor-default">
+                                            {tech}
+                                        </span>
+                                    ))}
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
             </div>
 
             {/* Background Decor */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-secondary/10 rounded-full blur-[120px] pointer-events-none -z-10" />
+            <div className="absolute top-1/2 left-0 -translate-y-1/2 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[150px] pointer-events-none -z-10" />
         </section>
     );
 };

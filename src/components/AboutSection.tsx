@@ -26,79 +26,103 @@ const AboutSection = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-muted/30">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Sobre <span className="bg-gradient-accent bg-clip-text text-transparent">Mim</span>
-          </h2>
-        </div>
+    <section id="about" className="py-24 relative overflow-hidden bg-gradient-hero">
+      {/* Dynamic Background Overlay */}
+      <div className="absolute inset-0 bg-gradient-hero-overlay pointer-events-none opacity-50"></div>
 
-        {/* Photo + Text Section */}
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center mb-16 max-w-5xl mx-auto">
-          {/* Profile Photo */}
-          <div className="flex justify-center lg:justify-center order-1 lg:order-none">
-            <div className="relative group">
-              {/* Animated gradient border */}
-              <div className="absolute -inset-1 bg-gradient-to-r from-secondary via-primary to-secondary rounded-full blur-sm opacity-75 group-hover:opacity-100 transition-opacity duration-500 animate-gradient-x"></div>
-
-              {/* Photo container */}
-              <div className="relative">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-20 mb-20">
+          {/* Photo Section with refined styling */}
+          <div className="relative group shrink-0">
+            <div className="absolute -inset-4 bg-gradient-to-tr from-primary/20 via-secondary/20 to-primary/20 rounded-[2rem] blur-2xl opacity-50 group-hover:opacity-100 transition duration-700"></div>
+            
+            <div className="relative">
+              <div className="w-64 h-64 md:w-80 md:h-80 rounded-[2rem] overflow-hidden border border-white/10 shadow-2xl relative z-10">
                 <img
                   src="/eu.jpeg"
-                  alt="Lázaro Vasconcelos - Desenvolvedor Fullstack"
-                  className="w-72 h-72 md:w-80 md:h-80 object-cover rounded-full shadow-hero relative z-10 transition-transform duration-500 group-hover:scale-[1.02]"
+                  alt="Lázaro Vasconcelos"
+                  className="w-full h-full object-cover transition duration-700 group-hover:scale-110"
                 />
-
-                {/* Decorative elements */}
-                <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-gradient-accent rounded-xl opacity-50 blur-lg"></div>
-                <div className="absolute -top-4 -left-4 w-16 h-16 bg-secondary/30 rounded-full blur-md"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></div>
               </div>
-
+              
+              {/* Floating tech badge */}
+              <div className="absolute -bottom-6 -right-6 p-4 bg-white/5 border border-white/10 backdrop-blur-xl rounded-2xl shadow-2xl z-20">
+                <div className="flex gap-2">
+                  <div className="w-3 h-3 rounded-full bg-emerald-500 animate-pulse"></div>
+                  <span className="text-xs font-bold uppercase tracking-widest text-white/80">Senior Mindset</span>
+                </div>
+              </div>
             </div>
           </div>
 
-          {/* Journey Text */}
-          <div>
-            <h3 className="text-2xl font-semibold mb-6">Minha Jornada</h3>
-            <p className="text-muted-foreground text-lg mb-6">
-              Desenvolvedor fullstack,
-              com experiência na construção e manutenção de aplicações web modernas,
-              atuando desde a concepção até a entrega de soluções eficientes e escaláveis.
-            </p>
-            <p className="text-muted-foreground text-lg mb-6">
-              Atualmente atuo com React, TypeScript e Node.js,
-              aplicando boas práticas de desenvolvimento, código limpo e arquiteturas bem estruturadas.
-            </p>
-            <p className="text-muted-foreground text-lg">
-              Além do desenvolvimento, gosto de compartilhar conhecimento através de mentoria e contribuições
-              para a comunidade tech. Também já atuei como professor de informática na Solar Coca-Cola,
-              onde pude contribuir para a formação acadêmica e preparação profissional de alunos,
-              utilizando a tecnologia como ferramenta para impulsionar carreiras.
-            </p>
+          {/* Text Content */}
+          <div className="flex-1">
+            <h2 className="text-sm font-bold uppercase tracking-[0.2em] text-primary mb-4">Minha História</h2>
+            <h3 className="text-4xl md:text-5xl font-bold mb-8 text-white">Engenharia de Software com <span className="text-transparent bg-clip-text bg-gradient-accent">Propósito</span></h3>
+            
+            <div className="space-y-6 text-slate-300 text-lg leading-relaxed">
+              <p>
+                Como Desenvolvedor Fullstack Pleno, minha missão vai além de escrever código: trata-se de arquitetar soluções robustas que impulsionam o crescimento de negócios e melhoram a vida das pessoas.
+              </p>
+              <p>
+                Com mais de <span className="text-white font-medium">3 anos de trajetória</span>, consolidei expertise no ecossistema JavaScript/TypeScript, entregando desde aplicações SaaS complexas até integrações de hardware imersivas para grandes marcas como a <span className="text-white font-medium">Claro</span>.
+              </p>
+              <p>
+                Acredito na tecnologia como ferramenta de transformação social. Minha experiência como mentor e professor na <span className="text-white font-medium">Solar Coca-Cola</span> me ensinou que o verdadeiro valor de um engenheiro está na sua capacidade de compartilhar conhecimento e elevar o time.
+              </p>
+              
+              <div className="pt-6 mt-6 border-t border-white/10">
+                <h4 className="text-white font-semibold mb-5 text-lg">Principais Focos de Atuação</h4>
+                <ul className="grid sm:grid-cols-2 gap-y-3 gap-x-6">
+                  <li className="flex items-start gap-3">
+                    <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary/40 shrink-0"></span>
+                    <span className="text-slate-300 text-sm">Desenvolvimento de APIs REST e microsserviços</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary/40 shrink-0"></span>
+                    <span className="text-slate-300 text-sm">Arquitetura orientada a boas práticas (Clean Code, SOLID)</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary/40 shrink-0"></span>
+                    <span className="text-slate-300 text-sm">Modelagem e otimização de dados relacional</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary/40 shrink-0"></span>
+                    <span className="text-slate-300 text-sm">Containerização com Docker</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary/40 shrink-0"></span>
+                    <span className="text-slate-300 text-sm">Deploy e infraestrutura em AWS</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary/40 shrink-0"></span>
+                    <span className="text-slate-300 text-sm">Integração entre sistemas e CI/CD</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
 
-        {/* Highlights Cards */}
+        {/* Impact Cards - Bento Grid Style */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {highlights.map((item, index) => (
-            <Card key={index} className="border-none shadow-soft hover:shadow-glow transition-all duration-300 hover:-translate-y-1">
-              <CardContent className="p-6">
-                <div className="flex flex-col items-center text-center space-y-4">
-                  <div className="bg-gradient-accent p-4 rounded-xl">
-                    <item.icon className="h-8 w-8 text-foreground" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-lg mb-2">{item.title}</h4>
-                    <p className="text-muted-foreground text-sm">{item.description}</p>
-                  </div>
+            <div key={index} className="p-8 rounded-[2rem] bg-white/[0.07] border border-white/10 hover:border-primary/50 transition-all duration-500 group relative overflow-hidden backdrop-blur-sm">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              
+              <div className="relative z-10">
+                <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
+                  <item.icon className="h-7 w-7 text-primary-light" />
                 </div>
-              </CardContent>
-            </Card>
+                <h4 className="text-xl font-bold text-white mb-3">{item.title}</h4>
+                <p className="text-slate-300 text-sm leading-relaxed">{item.description}</p>
+              </div>
+            </div>
           ))}
         </div>
       </div>
-    </section >
+    </section>
   );
 };
 

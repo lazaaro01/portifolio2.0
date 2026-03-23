@@ -34,7 +34,7 @@ const ProjectsSection = () => {
     },
     {
       title: "Tech Tools Hub",
-      description: "Um catálogo prático de comandos e atalhos para desenvolvedores.",
+      description: "O Tech Tools Hub é um portal centralizado para desenvolvedores que desejam acesso rápido a comandos de diversas ferramentas (Docker, Git, Kubernetes, etc.). O foco é na clareza, rapidez e utilidade prática, eliminando a necessidade de navegar por documentações extensas para tarefas simples.",
       image: "/tech.png",
       technologies: ["Next.js 15+", "React", "Tailwind CSS v4", "GroqIA",],
       github: "https://github.com/lazaaro01/Tech-Tools-Hub",
@@ -65,146 +65,137 @@ const ProjectsSection = () => {
   const otherProjects = projects.filter(p => !p.featured);
 
   return (
-    <section id="projects" className="py-20 bg-muted/30">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Meus <span className="bg-gradient-accent bg-clip-text text-transparent">Projetos</span>
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Uma seleção dos meus trabalhos mais recentes e destacados
-          </p>
-        </div>
+    <section id="projects" className="py-24 relative overflow-hidden bg-gradient-hero">
+      {/* Dynamic Background Overlay */}
+      <div className="absolute inset-0 bg-gradient-hero-overlay pointer-events-none opacity-50"></div>
 
-        {/* Featured Projects */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="mb-16">
-          <h3 className="text-2xl font-semibold mb-8 text-center">Projetos em Destaque</h3>
-          <div className="grid lg:grid-cols-2 gap-8">
-            {featuredProjects.map((project, index) => (
-              <Card key={index} className="group border-none shadow-soft hover:shadow-hero transition-all duration-500 overflow-hidden">
-                <div className="relative overflow-hidden">
-                  <img 
-                    src={project.image} 
-                    alt={project.title}
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div className="absolute bottom-4 left-4 right-4 flex gap-2">
-                      <Button size="sm" className="btn-hero flex-1">
-                        <Eye className="mr-2 h-4 w-4" />
-                        Demo
-                      </Button>
-                      <Button size="sm" variant="outline" className="btn-outline-hero">
-                        <Github className="h-4 w-4" />
-                      </Button>
-                    </div>
-                  </div>
-                </div>
-                <CardContent className="p-6">
-                  <h4 className="text-xl font-semibold mb-3">{project.title}</h4>
-                  <p className="text-muted-foreground mb-4 line-clamp-3">{project.description}</p>
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {project.technologies.map((tech, idx) => (
-                      <Badge key={idx} variant="secondary" className="bg-gradient-card text-xs">
-                        {tech}
-                      </Badge>
-                    ))}
-                  </div>
-                  <div className="flex gap-3">
-                    <Button variant="outline" size="sm" className="flex-1" asChild>
-                      <a
-                        href={project.live}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <ExternalLink className="mr-2 h-4 w-4" />
-                        Ver Projeto
-                      </a>
-                    </Button>
-                    <Button variant="outline" size="sm" asChild>
-                      <a
-                        href={project.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <Github className="h-4 w-4" />
-                      </a>
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+          <h2 className="text-sm font-bold uppercase tracking-[0.2em] text-primary mb-4">Portfólio</h2>
+          <h3 className="text-4xl md:text-5xl font-bold text-white">Projetos em <span className="text-transparent bg-clip-text bg-gradient-accent">Destaque</span></h3>
         </div>
 
-        {/* Other Projects */}
-        <div>
-          <h3 className="text-2xl font-semibold mb-8 text-center">Outros Projetos</h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {otherProjects.map((project, index) => (
-              <Card key={index} className="group border-none shadow-soft hover:shadow-glow transition-all duration-300 overflow-hidden">
-                <div className="relative overflow-hidden">
+        {/* Featured Projects - Large Cards */}
+        <div className="grid gap-12 mb-20">
+          {featuredProjects.map((project, index) => (
+            <div key={index} className={`flex flex-col lg:flex-row gap-8 lg:gap-16 items-center group ${index % 2 !== 0 ? 'lg:flex-row-reverse' : ''}`}>
+              {/* Image Side */}
+              <div className="flex-1 w-full relative">
+                <div className="absolute -inset-4 bg-gradient-to-tr from-primary/20 via-secondary/20 to-primary/20 rounded-[2.5rem] blur-2xl opacity-0 group-hover:opacity-60 transition duration-700"></div>
+                
+                <div className="relative aspect-video rounded-[2rem] overflow-hidden border border-white/10 shadow-2xl">
                   <img 
                     src={project.image} 
                     alt={project.title}
-                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full object-cover transition duration-1000 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent opacity-60 group-hover:opacity-30 transition duration-500"></div>
+                  
+                  {/* Overlay buttons on mobile or hover */}
+                  <div className="absolute bottom-6 left-6 right-6 flex gap-3 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 delay-100">
+                    <Button className="flex-1 rounded-xl bg-white text-black hover:bg-white/90 font-bold" asChild>
+                      <a href={project.live} target="_blank" rel="noopener noreferrer">
+                        <Eye className="mr-2 h-4 w-4" /> Demo
+                      </a>
+                    </Button>
+                    <Button variant="outline" className="rounded-xl border-white/20 bg-black/50 backdrop-blur-md text-white hover:bg-white/10" asChild>
+                      <a href={project.github} target="_blank" rel="noopener noreferrer">
+                        <Github className="h-4 w-4" />
+                      </a>
+                    </Button>
+                  </div>
+                </div>
+              </div>
+
+              {/* Text Side */}
+              <div className="flex-1 w-full">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary-light text-xs font-bold uppercase tracking-wider mb-6">
+                  Projeto em Destaque
+                </div>
+                <h4 className="text-3xl md:text-4xl font-bold text-white mb-6 group-hover:text-primary-light transition-colors">{project.title}</h4>
+                <p className="text-slate-300 text-lg leading-relaxed mb-8">
+                  {project.description}
+                </p>
+                
+                <div className="flex flex-wrap gap-3 mb-8">
+                  {project.technologies.map((tech, idx) => (
+                    <span key={idx} className="px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-sm text-slate-300 font-medium">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+
+                <div className="hidden lg:flex gap-4">
+                  <Button size="lg" className="rounded-full bg-primary hover:bg-primary/90 text-white font-bold px-8" asChild>
+                    <a href={project.live} target="_blank" rel="noopener noreferrer">
+                      Explorar Projeto <ExternalLink className="ml-2 h-4 w-4" />
+                    </a>
+                  </Button>
+                  <Button size="lg" variant="outline" className="rounded-full border-white/10 bg-white/5 text-white hover:bg-white/10 px-8" asChild>
+                    <a href={project.github} target="_blank" rel="noopener noreferrer">
+                      Código <Github className="ml-2 h-4 w-4" />
+                    </a>
+                  </Button>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Other Projects - Bento Grid */}
+        <div className="pt-20 border-t border-white/5">
+          <h3 className="text-2xl font-bold text-white mb-10">Outras Explorações</h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {otherProjects.map((project, index) => (
+              <div key={index} className="group p-8 rounded-[2rem] bg-white/5 border border-white/10 hover:border-primary/50 transition-all duration-500 flex flex-col h-full">
+                <div className="relative aspect-video rounded-2xl overflow-hidden mb-6 border border-white/5">
+                  <img 
+                    src={project.image} 
+                    alt={project.title}
+                    className="w-full h-full object-cover transition duration-700 group-hover:scale-110"
                   />
                 </div>
-                <CardContent className="p-5">
-                  <h4 className="text-lg font-semibold mb-2">{project.title}</h4>
-                  <p className="text-muted-foreground text-sm mb-3 line-clamp-2">{project.description}</p>
-                  <div className="flex flex-wrap gap-1 mb-3">
-                    {project.technologies.slice(0, 3).map((tech, idx) => (
-                      <Badge key={idx} variant="secondary" className="text-xs bg-gradient-card">
-                        {tech}
-                      </Badge>
-                    ))}
-                    {project.technologies.length > 3 && (
-                      <Badge variant="secondary" className="text-xs bg-gradient-card">
-                        +{project.technologies.length - 3}
-                      </Badge>
-                    )}
-                  </div>
-                  <div className="flex gap-2">
-                    <Button variant="outline" size="sm" className="flex-1 text-xs" asChild>
-                      <a
-                        href={project.live}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <ExternalLink className="mr-1 h-3 w-3" />
-                        Demo
-                      </a>
-                    </Button>
-                    <Button variant="outline" size="sm" className="text-xs" asChild>
-                      <a
-                        href={project.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <Github className="h-3 w-3" />
-                      </a>
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
+                
+                <h4 className="text-xl font-bold text-white mb-4 group-hover:text-primary-light transition-colors">{project.title}</h4>
+                <p className="text-slate-300 text-sm leading-relaxed mb-6 flex-1">
+                  {project.description}
+                </p>
+                
+                <div className="flex flex-wrap gap-2 mb-8">
+                  {project.technologies.slice(0, 3).map((tech, idx) => (
+                    <span key={idx} className="px-3 py-1 rounded-lg bg-white/5 text-[10px] text-slate-300 font-bold uppercase tracking-wider">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+                
+                <div className="flex gap-3">
+                  <Button variant="outline" size="sm" className="flex-1 rounded-xl border-white/10 bg-white/5 text-white text-xs" asChild>
+                    <a href={project.live} target="_blank" rel="noopener noreferrer">Demo</a>
+                  </Button>
+                  <Button variant="outline" size="sm" className="rounded-xl border-white/10 bg-white/5 text-white" asChild>
+                    <a href={project.github} target="_blank" rel="noopener noreferrer">
+                       <Github className="h-4 w-4" />
+                    </a>
+                  </Button>
+                </div>
+              </div>
             ))}
           </div>
         </div>
 
         {/* Call to Action */}
-        <div className="text-center mt-12">
-          <p className="text-muted-foreground mb-4">Interessado em ver mais do meu trabalho?</p>
-          <Button size="lg" className="btn-hero" asChild>
-            <a
-              href="https://github.com/lazaaro01"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Github className="mr-2 h-5 w-5" />
-              Ver todos no GitHub
-            </a>
-          </Button>
+        <div className="mt-24 p-12 rounded-[3rem] bg-gradient-to-r from-primary/20 to-secondary/20 border border-white/10 text-center relative overflow-hidden">
+          <div className="absolute inset-0 bg-noise opacity-20 pointer-events-none"></div>
+          <div className="relative z-10">
+            <h4 className="text-3xl font-bold text-white mb-4">Tem um projeto em mente?</h4>
+            <p className="text-slate-300 text-lg mb-10 max-w-2xl mx-auto">
+              Estou sempre em busca de desafios complexos e colaborações impactantes. Vamos transformar sua ideia em realidade.
+            </p>
+            <Button size="lg" className="rounded-full bg-white text-black hover:bg-white/90 font-extrabold px-12 h-14" asChild>
+              <a href="#contact">Vamos Conversar</a>
+            </Button>
+          </div>
         </div>
       </div>
     </section>

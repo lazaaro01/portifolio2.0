@@ -10,8 +10,11 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-primary-dark text-white py-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <footer className="bg-gradient-hero text-white py-12 relative overflow-hidden">
+      {/* Dynamic Background Overlay */}
+      <div className="absolute inset-0 bg-gradient-hero-overlay pointer-events-none opacity-50"></div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid md:grid-cols-3 gap-8 items-center">
           {/* Brand */}
           <div>

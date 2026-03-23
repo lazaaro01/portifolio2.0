@@ -9,117 +9,102 @@ All colors MUST be HSL.
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 0 0% 15%;
+    --foreground: 224 71.4% 4.1%;
 
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 15%;
+    --card-foreground: 224 71.4% 4.1%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 15%;
+    --popover-foreground: 224 71.4% 4.1%;
 
-    /* Rich blue theme - Modern and professional */
-    --primary: 220 90% 45%;
-    --primary-foreground: 0 0% 100%;
-    --primary-dark: 220 95% 25%;
-    --primary-light: 220 85% 60%;
+    --primary: 221.2 83.2% 53.3%;
+    --primary-foreground: 210 40% 98%;
 
-    /* Cyan/Teal accent colors */
-    --secondary: 190 95% 60%;
-    --secondary-foreground: 0 0% 15%;
-    --secondary-dark: 185 85% 45%;
-    --secondary-light: 195 100% 70%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
 
-    /* Neutral grays */
-    --muted: 0 0% 96%;
-    --muted-foreground: 0 0% 45%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 45 95% 60%;
-    --accent-foreground: 0 0% 15%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
 
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
 
-    --border: 0 0% 90%;
-    --input: 0 0% 95%;
-    --ring: 0 75% 40%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
 
-    /* Hero section gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(var(--primary-dark)), hsl(var(--primary)));
-    --gradient-hero-overlay: linear-gradient(45deg, hsl(var(--primary) / 0.1), hsl(var(--secondary) / 0.05));
-    
-    /* Accent gradients */
-    --gradient-accent: linear-gradient(135deg, hsl(var(--secondary-dark)), hsl(var(--secondary)));
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100% / 0.05), hsl(0 0% 100% / 0.02));
-
-    /* Shadows */
-    --shadow-soft: 0 4px 20px hsl(var(--primary) / 0.1);
-    --shadow-glow: 0 0 30px hsl(var(--secondary) / 0.3);
-    --shadow-hero: 0 25px 50px hsl(var(--primary) / 0.2);
-
-    /* Animations */
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-spring: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    --primary-light: 221.2 83.2% 63.3%;
+    --primary-dark: 221.2 83.2% 43.3%;
+    --secondary-light: 210 40% 99.1%;
+    --secondary-dark: 210 40% 90.1%;
 
     --radius: 0.75rem;
 
-    --sidebar-background: 0 0% 98%;
+    --noise: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
 
-    --sidebar-foreground: 240 5.3% 26.1%;
+    /* Hero section gradients */
+    --gradient-hero: linear-gradient(135deg, #020617 0%, #0f172a 100%);
+    --gradient-hero-overlay: radial-gradient(circle at 50% 50%, rgba(56, 189, 248, 0.05) 0%, transparent 50%);
+    
+    /* Accent gradients */
+    --gradient-accent: linear-gradient(135deg, #38bdf8 0%, #1d4ed8 100%);
+    --gradient-card: linear-gradient(145deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
 
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Shadows */
+    --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.05);
+    --shadow-glow: 0 0 30px rgba(56, 189, 248, 0.2);
+    --shadow-hero: 0 25px 50px rgba(0, 0, 0, 0.1);
   }
 
   .dark {
-    --background: 0 0% 8%;
-    --foreground: 0 0% 95%;
+    --background: 224 71.4% 4.1%;
+    --foreground: 210 40% 98%;
 
-    --card: 0 0% 10%;
-    --card-foreground: 0 0% 95%;
+    --card: 224 71.4% 4.1%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 0 0% 8%;
-    --popover-foreground: 0 0% 95%;
+    --popover: 224 71.4% 4.1%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 220 90% 55%;
-    --primary-foreground: 0 0% 100%;
-    --primary-dark: 220 95% 35%;
-    --primary-light: 220 85% 70%;
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 47.4% 11.2%;
 
-    --secondary: 190 95% 65%;
-    --secondary-foreground: 0 0% 15%;
-    --secondary-dark: 185 85% 50%;
-    --secondary-light: 195 100% 75%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
 
-    --muted: 0 0% 15%;
-    --muted-foreground: 0 0% 65%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 45 95% 65%;
-    --accent-foreground: 0 0% 15%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
 
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
 
-    --border: 0 0% 20%;
-    --input: 0 0% 15%;
-    --ring: 0 75% 50%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 48%;
 
-    --gradient-hero: linear-gradient(135deg, hsl(var(--primary-dark)), hsl(var(--primary)));
-    --gradient-hero-overlay: linear-gradient(45deg, hsl(var(--primary) / 0.15), hsl(var(--secondary) / 0.08));
-    --gradient-accent: linear-gradient(135deg, hsl(var(--secondary-dark)), hsl(var(--secondary)));
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100% / 0.08), hsl(0 0% 100% / 0.03));
+    --primary-light: 217.2 91.2% 69.8%;
+    --primary-dark: 217.2 91.2% 49.8%;
+    --secondary-light: 217.2 32.6% 27.5%;
+    --secondary-dark: 217.2 32.6% 12.5%;
 
-    --shadow-soft: 0 4px 20px hsl(0 0% 0% / 0.3);
-    --shadow-glow: 0 0 30px hsl(var(--secondary) / 0.4);
-    --shadow-hero: 0 25px 50px hsl(0 0% 0% / 0.5);
+    --noise: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+
+    /* Premium Dark Theme Gradients */
+    --gradient-hero: linear-gradient(180deg, #020617 0%, #0a0a0a 100%);
+    --gradient-hero-overlay: radial-gradient(circle at 50% 0%, rgba(29, 78, 216, 0.15) 0%, transparent 70%);
+    --gradient-accent: linear-gradient(135deg, #60a5fa 0%, #2563eb 100%);
+    --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.4);
+    --shadow-glow: 0 0 30px rgba(37, 99, 235, 0.3);
+    --shadow-hero: 0 25px 50px rgba(0, 0, 0, 0.7);
+
+    /* Card background improvement */
+    --gradient-card: linear-gradient(145deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.03) 100%);
   }
 }
 
@@ -130,6 +115,14 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground font-sans antialiased;
+    background-image: var(--noise), var(--gradient-hero);
+    background-size: 100px 100px, 100% 100%;
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading tracking-tight;
   }
 
   html {
