@@ -31,7 +31,7 @@ const HeroSection = () => {
         </motion.h1>
 
         <motion.p {...fadeUp(0.2)} className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto mb-4">
-          Desenvolvedor Fullstack Pleno
+          Desenvolvedor Fullstack
         </motion.p>
 
         <motion.p {...fadeUp(0.25)} className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed">
