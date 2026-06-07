@@ -5,7 +5,7 @@ const fadeUp = {
   initial: { opacity: 0, y: 30 },
   whileInView: { opacity: 1, y: 0 },
   viewport: { once: true, margin: "-100px" },
-  transition: { duration: 0.6, ease: [0.25, 0.1, 0.25, 1] },
+  transition: { duration: 0.6, ease: [0.25, 0.1, 0.25, 1] as const },
 };
 
 const stagger = {
@@ -60,7 +60,7 @@ const ProjectsSection = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}
+          transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] as const }}
           className="text-center mb-16"
         >
           <span className="text-sm font-bold uppercase tracking-[0.2em] text-primary mb-4 block">Portfólio</span>
@@ -82,7 +82,7 @@ const ProjectsSection = () => {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}
+              transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] as const }}
               className="group rounded-2xl bg-white/[0.04] border border-white/[0.06] overflow-hidden hover:border-primary/30 transition-all duration-500 card-hover"
             >
               <div className="relative aspect-video overflow-hidden">
@@ -140,7 +140,7 @@ const ProjectsSection = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}
+          transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] as const }}
           className="mt-16 text-center"
         >
           <a
