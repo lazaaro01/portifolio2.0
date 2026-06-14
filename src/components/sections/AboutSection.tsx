@@ -46,9 +46,9 @@ const AboutSection = () => {
 
         <div className="grid lg:grid-cols-[0.8fr_1.2fr] gap-12 lg:gap-20 items-center mb-20">
           <motion.div {...fadeUp} className="relative mx-auto">
-            <div className="absolute -inset-4 bg-gradient-to-tr from-primary/20 via-blue-500/10 to-primary/20 rounded-2xl blur-2xl opacity-60" />
-            <div className="relative w-56 h-56 md:w-64 md:h-64 rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
-              <img src="/eu.jpeg" alt="Lázaro Vasconcelos" className="w-full h-full object-cover" />
+            <div className="absolute -inset-4 bg-gradient-to-tr from-primary/20 via-blue-500/10 to-primary/20 rounded-full blur-2xl opacity-60" />
+            <div className="relative w-56 h-56 md:w-64 md:h-64 rounded-full overflow-hidden border border-white/10 shadow-2xl">
+              <img src="/foto1.png" alt="Lázaro Vasconcelos" className="w-full h-full object-cover object-[55%_90%]" />
               <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
             </div>
           </motion.div>
