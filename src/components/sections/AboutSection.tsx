@@ -16,7 +16,7 @@ const stagger = {
 };
 
 const highlights = [
-  { icon: GraduationCap, title: "Formação", description: "Graduando em Análise e Desenvolvimento de Sistemas" },
+  { icon: GraduationCap, title: "Formação", description: "Graduado em Análise e Desenvolvimento de Sistemas" },
   { icon: Briefcase, title: "Experiência", description: "3+ anos como Desenvolvedor Fullstack" },
   { icon: Users, title: "Liderança", description: "Mentor e líder de equipes de desenvolvimento" },
   { icon: Lightbulb, title: "Inovação", description: "Sempre explorando novas tecnologias e soluções" },
