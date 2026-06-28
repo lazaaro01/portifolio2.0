@@ -4,7 +4,9 @@ import {
   SiExpress, SiFastify, SiSpring, SiGo,
   SiPostgresql, SiMongodb, SiRedis, SiDocker,
   SiAmazonecs, SiAmazonrds, SiTerraform, SiPrisma,
-  SiGraphql, SiFirebase, SiSupabase, SiGit, SiGithubactions,
+  SiGraphql, SiGit, SiGithubactions,
+  SiGrafana,
+  SiNestjs,
 } from "react-icons/si";
 
 const fadeUp = {
@@ -42,11 +44,12 @@ const categories = [
       { name: "Node.js", icon: SiNodedotjs, color: "#339933" },
       { name: "Express", icon: SiExpress, color: "#fff" },
       { name: "Fastify", icon: SiFastify, color: "#fff" },
+      { name: "NestJs", icon: SiNestjs, color: "#e0234e"},
+      { name: "Golang", icon: SiGo, color: "#2496ED"},
       { name: "Spring Boot", icon: SiSpring, color: "#6DB33F" },
-      { name: "Go", icon: SiGo, color: "#00ADD8" },
       { name: "GraphQL", icon: SiGraphql, color: "#E10098" },
     ],
-    list: ["Node.js", "Express", "Fastify", "Spring Boot", "Go", "GraphQL", "REST APIs", "Microsserviços", "JWT/Sessions", "TypeORM/Prisma", "Jest/Vitest", "WebSockets"],
+    list: ["Node.js", "Express", "Fastify","NestJs", "Spring Boot", "Go", "GraphQL", "REST APIs", "Microsserviços", "JWT/Sessions", "TypeORM/Prisma", "Jest/Vitest", "WebSockets", "WebHook"],
   },
   {
     title: "Database, Cloud & DevOps",
@@ -61,6 +64,7 @@ const categories = [
       { name: "Terraform", icon: SiTerraform, color: "#7B42BC" },
       { name: "Git", icon: SiGit, color: "#F05032" },
       { name: "CI/CD", icon: SiGithubactions, color: "#2088FF" },
+      { name: "Grafana", icon: SiGrafana, color: "#FF780A"}
     ],
     list: ["PostgreSQL", "MongoDB", "Redis", "AWS (S3, EC2, Lambda, RDS)", "Docker", "CI/CD (GitHub Actions)", "Terraform", "Linux", "Git"],
   },
